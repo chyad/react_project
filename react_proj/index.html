@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF=8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="./style.css">
     <title>testing</title>
 </head>
 
@@ -12,33 +12,7 @@
     <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
   
-    <script>
-        const Pet = () => {
-            return React.createElement(
-                "div", {}, 
-            [
-              React.createElement("h1", {}, "Luna"),
-              React.createElement("h2", {}, "Dog"),
-              React.createElement("h2", {}, "Havanese"),
-            ]);
-          };
-          
-          const App = () => {
-            return React.createElement(
-                "div", {}, 
-            [
-              React.createElement("h1", {}, "Adopt Me!"),
-              React.createElement(Pet),
-              React.createElement(Pet),
-              React.createElement(Pet),
-            ]);
-          };
-          
-          const container = document.getElementById("root");
-          const root = ReactDOM.createRoot(container);
-          root.render(React.createElement(App));
-
-    </script>
+    <script src="./App.js"></script>
 </body>
 
 </html>
