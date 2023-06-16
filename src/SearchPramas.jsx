@@ -5,7 +5,7 @@ const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 const SearchParams = () => {
     const [location, setLocation] = useState("");
     const [animal, updateAnimal] = useState("");
-    const [breed, setBreed] = useState("");
+    const [breed, updateBreed] = useState("");
     const breeds =[];
 
     return (
@@ -53,8 +53,8 @@ const SearchParams = () => {
                         disabled={!breeds.length}
                         id="breed"
                         value={breed}
-                        onChange={(e) => setBreed(e.target.value)}
-                        onBlur={(e) => setBreed(e.target.value)}
+                        onChange={(e) => updateBreed(e.target.value)}
+                        onBlur={(e) => updateBreed(e.target.value)}
                     >
 
                         <option />
